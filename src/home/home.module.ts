@@ -5,6 +5,7 @@ import { HomeComponent } from './home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HeaderComponent } from './components/header/header.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 export const ROUTES: Routes = [
   {
@@ -20,7 +21,12 @@ export const ROUTES: Routes = [
 ];
 
 @NgModule({
-  imports: [CommonModule, RouterModule.forChild(ROUTES)],
-  declarations: [IndexComponent, HomeComponent, NavBarComponent, HeaderComponent]
+  imports: [CommonModule, RouterModule.forChild(ROUTES), NgbModule.forRoot()],
+  declarations: [
+    IndexComponent,
+    HomeComponent,
+    NavBarComponent,
+    HeaderComponent
+  ]
 })
 export class HomeModule {}

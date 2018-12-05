@@ -1,0 +1,31 @@
+.navbar {
+  background-color: #cee7e7;
+  padding: 0;
+}
+.nav-link {
+  padding: 15px !important;
+  font-size: 15px;
+  line-height: 20px;
+  color: #777777;
+}
+.nav-item > a:hover,
+.nav-item.show,
+.navbar-nav .show > .nav-link,
+.dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.24) !important;
+  color: #fff !important;
+}
+.dropdown-toggle {
+  cursor: pointer;
+}
+.dropdown-menu {
+  margin: 0;
+  border-radius: 0;
+}
+.dropdown-item {
+  padding: 8px 20px;
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+  text-transform: uppercase;
+}

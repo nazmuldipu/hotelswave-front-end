@@ -1,3 +1,246 @@
-<p>
-  nav-bar works!
-</p>
+<!-- <div class="navbar"><div class="container"></div></div> -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <!-- <a class="navbar-brand" href="#">Container</a> -->
+    <button
+      class="navbar-toggler"
+      (click)="toggleCollapse()"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      class="collapse navbar-collapse"
+      id="navbarCollapse"
+      [class.show]="show"
+    >
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#"> WHY US </a></li>
+        <li ngbDropdown placement="bottom-right" class="nav-item dropdown">
+          <a
+            ngbDropdownToggle
+            class="nav-link dropdown-toggle sliding-middle-out"
+            id="hotelsDrop"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >HOTELS</a
+          >
+          <div
+            ngbDropdownMenu
+            class="dropdown-menu"
+            aria-labelledby="hotelsDrop"
+          >
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/profile"
+              (click)="toggleCollapse()"
+            >
+              ALL HOTELS
+            </a>
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/changePassword"
+              (click)="toggleCollapse()"
+            >
+              COX'S BAZAR
+            </a>
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/changePassword"
+              (click)="toggleCollapse()"
+            >
+              SAINT MARTIN
+            </a>
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/changePassword"
+              (click)="toggleCollapse()"
+            >
+              BANDARBAN
+            </a>
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/changePassword"
+              (click)="toggleCollapse()"
+            >
+              RANGAMATI
+            </a>
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/changePassword"
+              (click)="toggleCollapse()"
+            >
+              KHAGRACHARI
+            </a>
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/changePassword"
+              (click)="toggleCollapse()"
+            >
+              SYLHET
+            </a>
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/changePassword"
+              (click)="toggleCollapse()"
+            >
+              SRIMANGAL
+            </a>
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/changePassword"
+              (click)="toggleCollapse()"
+            >
+              KHULNA
+            </a>
+          </div>
+        </li>
+        <li ngbDropdown placement="bottom-right" class="nav-item dropdown">
+          <a
+            ngbDropdownToggle
+            class="nav-link dropdown-toggle sliding-middle-out"
+            id="hotelsDrop"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            SHIPS
+          </a>
+          <div
+            ngbDropdownMenu
+            class="dropdown-menu"
+            aria-labelledby="hotelsDrop"
+          >
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/profile"
+              (click)="toggleCollapse()"
+            >
+              ALL SHIPS
+            </a>
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/changePassword"
+              (click)="toggleCollapse()"
+            >
+              KIARI SINBAD
+            </a>
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/changePassword"
+              (click)="toggleCollapse()"
+            >
+              KEARI CRUISE &amp; DINE
+            </a>
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/changePassword"
+              (click)="toggleCollapse()"
+            >
+              L.C.T. KUTUBDIA
+            </a>
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/changePassword"
+              (click)="toggleCollapse()"
+            >
+              M.V. BANGALI
+            </a>
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/changePassword"
+              (click)="toggleCollapse()"
+            >
+              M.V. BAY CRUISER-1
+            </a>
+          </div>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#"> HOLIDAYS </a></li>
+        <li ngbDropdown placement="bottom-right" class="nav-item dropdown">
+          <a
+            ngbDropdownToggle
+            class="nav-link dropdown-toggle sliding-middle-out"
+            id="hotelsDrop"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            OTHER SERVICES
+          </a>
+          <div
+            ngbDropdownMenu
+            class="dropdown-menu"
+            aria-labelledby="hotelsDrop"
+          >
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/profile"
+              (click)="toggleCollapse()"
+            >
+              CONFERENCE &nbsp; EVENTS
+            </a>
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/changePassword"
+              (click)="toggleCollapse()"
+            >
+              CAR &nbsp; BUS
+            </a>
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/changePassword"
+              (click)="toggleCollapse()"
+            >
+              GROUP BOOKING
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> COUSTOMER SERVICE </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> SIGN IN &nbsp; ACCOUNTS </a>
+        </li>
+        <li ngbDropdown placement="bottom-right" class="nav-item dropdown">
+          <a
+            ngbDropdownToggle
+            class="nav-link dropdown-toggle sliding-middle-out"
+            id="hotelsDrop"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            USER
+          </a>
+          <div
+            ngbDropdownMenu
+            class="dropdown-menu"
+            aria-labelledby="hotelsDrop"
+          >
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/profile"
+              (click)="toggleCollapse()"
+            >
+              DASHBOARD
+            </a>
+            <a
+              class="dropdown-item"
+              routerLink="/dashboard/users/changePassword"
+              (click)="toggleCollapse()"
+            >
+              LOGOUT
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
