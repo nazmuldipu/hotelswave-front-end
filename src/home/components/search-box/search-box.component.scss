@@ -1,0 +1,70 @@
+.search-box {
+  height: 540px;
+  background-image: url(/assets/images/bed.jpg);
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: 100%;
+  text-align: center;
+  &-text {
+    padding-top: 10%;
+    font-size: 28px;
+    font-weight: 600;
+    color: #2a2a34;
+    letter-spacing: 3px;
+    line-height: 1.42;
+    font-family: Copperplate, 'Copperplate Gothic Light', 'Alegreya Sans SC',
+      sans-serif;
+  }
+  &-form {
+    margin: 20px 0;
+    &-input {
+      border: none;
+      border-radius: 0;
+      width: 450px;
+      height: 45px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 13pt;
+      color: #63717f;
+      padding: 0;
+      padding-left: 15px;
+    }
+    &-button {
+      width: 100px;
+      height: 45px;
+      margin: 0;
+      padding: 2px 0 0 0;
+      font-size: 14px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      border: 0;
+      color: #ffffff;
+      background-color: #007fad;
+      z-index: 1;
+      border-radius: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .search-box {
+    height: 250px;
+    background-position: top;
+    background-size: 100% 250px;
+    &-text {
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+    &-form {
+      &-input {
+        width: 80%;
+        height: 35px;
+        font-size: 10pt;
+        padding-left: 10px;
+      }
+      &-button {
+        height: 35px;
+        width: 40px;
+        padding: 1px 7px 2px 7px;
+      }
+    }
+  }
+}
