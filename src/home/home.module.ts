@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SearchBoxComponent } from './components/search-box/search-box.component';
 
 export const ROUTES: Routes = [
   {
@@ -26,7 +27,8 @@ export const ROUTES: Routes = [
     IndexComponent,
     HomeComponent,
     NavBarComponent,
-    HeaderComponent
+    HeaderComponent,
+    SearchBoxComponent
   ]
 })
 export class HomeModule {}
