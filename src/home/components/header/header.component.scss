@@ -1,0 +1,15 @@
+.company-logo {
+  height: 80px;
+  width: 200px;
+}
+.header {
+  &-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6f6f6f;
+    & a {
+      text-decoration: none;
+      color: #6f6f6f;
+    }
+  }
+}
