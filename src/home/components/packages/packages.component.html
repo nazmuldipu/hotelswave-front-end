@@ -1,3 +1,95 @@
-<p>
-  packages works!
-</p>
+<!-- {{ packages | json }} -->
+<div class="packages">
+  <div class="section-title black">PACKAGES</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-none d-md-block">
+        <nav class="navbar navbar-expand-md">
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item" [ngClass]="{ active: location == 'ALL' }">
+                <a class="nav-link" (click)="selectLocation('ALL')">ALL</a>
+              </li>
+              <li
+                class="nav-item"
+                [ngClass]="{ active: location == 'COXS BAZAR' }"
+              >
+                <a class="nav-link" (click)="selectLocation('COXS BAZAR')"
+                  >COXS BAZAR</a
+                >
+              </li>
+              <li
+                class="nav-item "
+                [ngClass]="{ active: location == 'SAINT MARTINS' }"
+              >
+                <a class="nav-link" (click)="selectLocation('SAINT MARTINS')"
+                  >SAINT MARTINS</a
+                >
+              </li>
+              <li
+                class="nav-item"
+                [ngClass]="{ active: location == 'BANDARBANS' }"
+              >
+                <a class="nav-link" (click)="selectLocation('BANDARBANS')"
+                  >BANDARBANS</a
+                >
+              </li>
+              <li
+                class="nav-item"
+                [ngClass]="{ active: location == 'RANGAMATI' }"
+              >
+                <a class="nav-link" (click)="selectLocation('RANGAMATI')"
+                  >RANGAMATI</a
+                >
+              </li>
+              <li class="nav-item" [ngClass]="{ active: location == 'SAJEK' }">
+                <a class="nav-link" (click)="selectLocation('SAJEK')">SAJEK</a>
+              </li>
+              <li class="nav-item" [ngClass]="{ active: location == 'SYLHET' }">
+                <a class="nav-link" (click)="selectLocation('SYLHET')"
+                  >SYLHET</a
+                >
+              </li>
+              <li
+                class="nav-item"
+                [ngClass]="{ active: location == 'COMBINED' }"
+              >
+                <a class="nav-link" (click)="selectLocation('COMBINED')"
+                  >COMBINED</a
+                >
+              </li>
+              <li
+                class="nav-item"
+                [ngClass]="{ active: location == 'INTERNATIONAL' }"
+              >
+                <a class="nav-link" (click)="selectLocation('INTERNATIONAL')"
+                  >INTERNATIONAL</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="row pt-5">
+      <div class="col-md-4" *ngFor="let package of packages">
+        <div class="packages-card">
+          <img
+            class="packages-card-image"
+            [src]="package.imageUrl"
+            alt="image"
+          />
+          <div class="packages-card-info">
+            <div class="packages-card-info-line1">{{ package.title }}</div>
+            <div class="packages-card-info-line2">From</div>
+            <div class="packages-card-info-line3">{{ package.price }} Taka</div>
+            <div class="packages-card-info-line4">
+              <i class="fa fa-clock-o"></i> {{ package.duration }}
+            </div>
+            <a class="btn btn packages-card-info-btn">SEE DETAILS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
