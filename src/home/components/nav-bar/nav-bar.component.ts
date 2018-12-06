@@ -13,4 +13,6 @@ export class NavBarComponent {
   toggleCollapse() {
     this.show = !this.show;
   }
+
+  // TODO: Navbar sticky top after scrolling
 }
